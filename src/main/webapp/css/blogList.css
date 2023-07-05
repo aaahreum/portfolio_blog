@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 14px;
+  color: #222;
+  line-height: 1.5;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.container {
+  display: flex;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.header {
+  color: #222222;
+}
+
+.header .container {
+  height: 100px;
+  align-items: center;
+  gap: 30px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-right: auto;
+  align-items: center;
+}
+
+.gnb {
+  display: flex;
+}
+
+.gnb li {
+  position: relative;
+}
+
+.gnb li a {
+  display: block;
+  height: 40px;
+  padding: 0 30px;
+  line-height: 40px;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.gnb li a:hover {
+  /* color: #eb5757; */
+  text-decoration-line: underline;
+  text-decoration-color: rgba(255, 222, 122, 0.5);
+  text-decoration-thickness: 7px;
+  text-decoration-skip-ink: all;
+}
+
+.gnb li.active a {
+  /* color: #eb5757; */
+}
+
+.gnb li ul {
+  display: none;
+  position: absolute;
+  width: 115px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+  left: 0;
+  top: 40px;
+  border-radius: 4px;
+}
+
+.gnb li ul li {
+  padding: 10px 10px 10px 10px;
+}
+
+.gnb li ul li a {
+  line-height: 15px;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.gnb li:hover ul {
+  display: block;
+  z-index: 10;
+}
+
+/* section */
+.section .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section .container h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.hide_category{
+	/*opacity:0;*/
+	display:none;
+}
+
+.section .container .category {
+  display: flex;
+  justify-content:center;
+  margin:0 auto;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 150px;
+}
+
+
+.section .container .category li {
+  font-size: 18px;
+  font-weight: 500;
+  color: #808080;
+}
+
+.category #cat_label:hover {
+  color: rgba(255, 222, 122, 1);
+}
+
+
+
+
+/*
+.section .container .category li:hover{
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 222, 122, 0.5);
+  text-decoration-thickness: 5px;
+  text-decoration-skip-ink: all;
+}
+*/
+
+
+.section .container .content .list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+.section .container .content .list img {
+  width: 480px;
+  height: 226px;
+  object-fit: cover;
+}
+
+.section .container .content .list .list_text {
+  width: 480px;
+  height: 180px;
+}
+
+.list .list_text .category_day {
+  display: flex;
+  justify-content: space-between;
+  color: #7b7b7b;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.list .list_text .category_day h2 {
+  font-size: 12px;
+}
+
+.list .list_text h3 {
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+.list .list_text p {
+}
+
+.content .btn_more {
+  margin-top: 120px;
+  margin-bottom: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .btn_more button {
+  width: 182px;
+  height: 45px;
+  color: #fff;
+  background-color: #222222;
+}
