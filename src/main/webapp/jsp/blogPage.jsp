@@ -37,7 +37,7 @@
 				PreparedStatement pstmt=null;
 				ResultSet rs=null;
 				String num = request.getParameter("num");
-				String sql="select name,title,memo,to_char(time,'yyyy-MM-dd  HH24:MI:SS'), hit, filename, category from b_table where num=?";
+				String sql="select name,title,memo,to_char(time,'yyyy-MM-dd  HH24:MI:SS'), hit, filename, replace(replace(category,'카테고리1','여행'),'카테고리2','음식') from b_table where num=?";
 				try{
 					pstmt=conn.prepareStatement(sql);
 					pstmt.setString(1, num);
@@ -50,7 +50,7 @@
 						int hit=rs.getInt("hit");
 						hit++;
 						String filename=rs.getString("filename");
-						String category=rs.getString("category");
+						String category=rs.getString(7);
 				
 			%>
             <a href="javascript:history.back();"><i class="xi-arrow-left" id="arrow"></i></a>

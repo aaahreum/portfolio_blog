@@ -14,7 +14,7 @@
 	if(checkName==null){%>
 	<div class="header">
         <div class="container">
-          <div class="logo">BLOG</div>
+          <div class="logo">Travelog</div>
           <ul class="gnb">
             <li>
               <a href="index.jsp">HOME</a>
@@ -35,7 +35,7 @@
 	
 		<div class="header">
 	        <div class="container">
-	          <div class="logo">BLOG</div>
+	          <div class="logo">Travelog</div>
 	          <ul class="gnb">
 	            <li>
 	              <a href="index.jsp">HOME</a>
